@@ -208,3 +208,8 @@ Optimal GD: [0.5, 75, 0.01, 100, 0.1, 50] with 551.067195449
 Optimal LS: [0.5, 75, 0.01, 100, 0.1, 50] with 447.992449094
 Optimal umvcLS: [0.6, 100, 0.01, 125, 0.1, 50] with 561.521971211
 
+Proceses Finished for Legendre Dataset:
+Optimal GD: [0.6, 75, 0.01, 50, 0.1, 50] with 598.657501254
+Optimal LS: [0.6, 75, 0.01, 50, 0.1, 50] with 533.385694778
+Optimal umvcLS: [0.6, 75, 0.01, 50, 0.1, 50] with 555.113549349
+
