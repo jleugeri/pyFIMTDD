@@ -15,7 +15,7 @@ import itertools
 import time
 from multiprocessing import Pool
 import multiprocessing as mp
-import progressbar as pb
+# import progressbar as pb
 import os
 import sys
 from DataGenerator import *
@@ -52,7 +52,7 @@ def get_Kiel_data():
     data = np.array(new_data)
     simulationSteps = len(data)
     return data
-    s#elf.bar = progressbar.ProgressBar(max_value=simulationSteps)
+    # self.bar = progressbar.ProgressBar(max_value=simulationSteps)
 
 def Kiel_Test(paramlist,show,val):
     fimtgd=FIMTGD(gamma=paramlist[0], n_min = paramlist[1], alpha=paramlist[2], threshold=paramlist[3], learn=paramlist[4])
@@ -498,9 +498,9 @@ def callback_func(list):
     global result_list
     global  numberoftests
     global counter
-    global bar
+    # global bar
     #print("[Thread "+str(list[2])+' ('+str(counter)+'/'+str(numberoftests)+')]: process finished')
-    bar.update(counter)
+    # bar.update(counter)
     counter += 1
     result_list[list[3]] = list
 
@@ -552,7 +552,7 @@ global minvalls
 global counter
 global numberoftests
 global result_list
-global bar
+# global bar
 global minvalgls
 global minparamgls
 global c_loss_ls
@@ -573,7 +573,7 @@ if __name__ == '__main__':
     global counter
     global numberoftests
     global result_list
-    global bar
+    # global bar
     global minvalgls
     global minparamgls
     global c_loss_ls
@@ -620,7 +620,7 @@ if __name__ == '__main__':
     result_list = [None]*numberoftests
     results = np.zeros(numberoftests)
     c = 0
-    bar = pb.ProgressBar(max_value=numberoftests)
+    # bar = pb.ProgressBar(max_value=numberoftests)
     if(False): #for non pool test, set this to true
         for paramlist in itertools.product(gammalist, n_minlist, alphalist, thresholdlist, learnlist):
             paramlist = list(paramlist)
