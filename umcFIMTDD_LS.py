@@ -3,6 +3,7 @@ import numpy as np
 class FIMTDD(object):
     def __init__(self, **args):
         self.left = LeafNode(parent = self, can_grow=True, **args)
+        print("Using primitive greedy FIMTDD")
 
     def eval(self,x):
         return self.left.eval(np.array(x).reshape((-1,)))
